@@ -1,7 +1,3 @@
-/*
-    ./webpack.config.js
-*/
-
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -21,7 +17,7 @@ module.exports = {
     loaders: [
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.less$/, loader: [ 'style-loader', 'css-loader', 'less-loader' ] },
-      { test: /\.(png|otf)$/, loader: 'url-loader' },
+      { test: /\.(jpg|png|otf)$/, loader: 'url-loader', options: { limit: 10000 } },
     ],
   },
   plugins: [HtmlWebpackPluginConfig],
