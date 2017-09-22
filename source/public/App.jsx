@@ -1,10 +1,10 @@
 import React from 'react';
-import Layout from './layout/Layout.jsx';
+import SplashPage from 'Layouts/SplashPage.jsx';
 
 export default class App extends React.Component {
   render() {
     return (
-      <Layout />
+      <SplashPage />
     );
   }
 }

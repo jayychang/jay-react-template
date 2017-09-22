@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './public/App.jsx';
-import './public/style/main.less';
+import 'Styles/main.less';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
